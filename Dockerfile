@@ -1,6 +1,6 @@
 FROM python:3.9-alpine
 WORKDIR /code
-COPY requirements.txt
+COPY requirements.txt .
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip3 install -r requirements.txt && pip3 install gunicorn
 COPY . .

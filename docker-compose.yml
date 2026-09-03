@@ -9,4 +9,4 @@ services:
     ports: 
       - "8000:8000"
   redis:
-    image: "redise:alpine"
+    image: "redis:alpine"
